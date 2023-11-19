@@ -9,10 +9,6 @@ import Api from './comp/Api';
 import { LangProvider } from './comp/Langcontext';
 import Hause from './comp/Hause';
 
-
-
-
-import Dark from './comp/darklight/DarkMode'
 function App() {
   return (
     <div className="App">

@@ -30,8 +30,8 @@ const Page = () => {
           <img src="prev.png" className='b' alt="Previous" />
         </div>
         <div className="erstimg" ref={imgref}>
-          {foto.map((img, index) => (
-            <img key={index} src={img} alt={`Image ${index + 1}`}       style={{ display: index === currentImageIndex ? 'block' : 'none' }}       />
+        {foto.map((img, index) => (
+            <img key={index} src={img} alt={`Image ${index + 1}`}       style={{ display: index === currentImageIndex ? 'block' : 'none' }}            />
           ))}
         </div>
         <div className="next"  onClick={next}>
