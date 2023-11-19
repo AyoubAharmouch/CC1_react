@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route,Routes} from 'react-router-dom'
+import Nav from './comp/Navv';
+import Cal from "./comp/Cal";
+import Slider from "./comp/Slider"
+import TodoList from './comp/Todo';
+import Api from './comp/Api';
 
+import { LangProvider } from './comp/Langcontext';
+import Hause from './comp/Hause';
+
+
+
+
+import Dark from './comp/darklight/DarkMode'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Nav />
+     <LangProvider>
+      <Routes>
+        <Route path="/home" element={
+            <Hause />
+        } />
+        <Route path='/calculator' element={<Cal />} />
+        <Route path='/Slider' element={<Slider />} />
+        <Route path='/todo' element={<TodoList />} />
+        <Route path='/API' element={<Api />} />
+      </Routes>
+      </LangProvider>
     </div>
   );
 }

@@ -1,0 +1,38 @@
+/* nav.css */
+body{
+  background-color: var(--body_background);
+  color: var(--body_color);
+
+}
+div {
+    margin: 20px;
+}
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin-right: 15px;
+  }
+  
+  a,lin {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover,lin:hover {
+    color: #007bff; 
+  }
+  
+
+  .cont{
+    display: flex;
+    margin-left: 310px;
+    margin-right: 500px;
+  }
