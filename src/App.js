@@ -15,6 +15,7 @@ function App() {
       <Nav />
       <LangProvider>
         <Routes>
+          <Route path="/*" element={<Hause />} />
           <Route path="/" element={<Hause />} />
           <Route path="/home" element={<Hause />} />
           <Route path="/calculator" element={<Cal />} />
