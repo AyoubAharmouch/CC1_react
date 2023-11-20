@@ -21,6 +21,7 @@ function App() {
           <Route path="/Slider" element={<Slider />} />
           <Route path="/todo" element={<TodoList />} />
           <Route path="/API" element={<Api />} />
+          {/* <Route path="/*" element={<h1>404</h1>} /> */}
         </Routes>
       </LangProvider>
     </div>
